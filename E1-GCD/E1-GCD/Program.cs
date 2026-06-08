@@ -11,6 +11,15 @@ try {
       n = temp;
    }
    Console.WriteLine($"Starting with m:{m} n:{n}");
+   int r = m % n;
+   Console.WriteLine($"r = m % n : r = {r}");
+   while (r > 0) {
+      m = n;
+      n = r;
+      r = m % n;
+      Console.WriteLine($"r = m % n : r = {r}");
+   }
+   Console.WriteLine($"The answer is n = {n}");
 }
 catch (Exception ex){
    Console.WriteLine($"Error: {ex.Message}");
