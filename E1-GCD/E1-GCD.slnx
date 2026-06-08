@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="E1-GCD.Tests/E1-GCD.Tests.csproj" />
+  <Project Path="E1-GCD/E1-GCD.csproj" />
+</Solution>
