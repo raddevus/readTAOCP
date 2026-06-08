@@ -1,9 +1,9 @@
 ﻿
 try {
    Console.WriteLine("Please enter the first of two integers > 0.");
-   int m = Convert.ToInt32(Console.ReadLine());
+   long m = Convert.ToInt64(Console.ReadLine());
    Console.WriteLine("Please enter the second of two integers > 0.");
-   int n = Convert.ToInt32(Console.ReadLine());
+   long n = Convert.ToInt64(Console.ReadLine());
    // insure that n is smallest of two integers
    if (m < n){ 
       var temp = m;
@@ -11,7 +11,7 @@ try {
       n = temp;
    }
    Console.WriteLine($"Starting with m:{m} n:{n}");
-   int r = m % n;
+   long r = m % n;
    Console.WriteLine($"r = m % n : r = {r}");
    while (r > 0) {
       m = n;
